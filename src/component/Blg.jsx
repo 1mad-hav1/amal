@@ -20,13 +20,16 @@ const Blg = () => {
       setAut(a.target.value);
       console.log(aut);
     }
+    const add = ()=>{
+      alert("Data added")
+    }
   return (
     <div>
         <TextField variant='outlined' label="Blog Name" onChange={Nme}/>
         <TextField variant='outlined' label="Description" onChange={Des}/>
         <TextField variant='outlined' label="Author Name" onChange={Aut}/>
         <br/>
-        <Button variant='contained'>Add Blog</Button>
+        <Button variant='contained'onClick={add}>Add Blog</Button>
     </div>
   )
 }
