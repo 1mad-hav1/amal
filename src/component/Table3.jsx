@@ -12,7 +12,7 @@ const Table3 = () => {
             console.log(users);
         })
     .catch(err=>{console.log(err)})
-    },[])
+    })
   return (
     <div>
         <TableContainer>
