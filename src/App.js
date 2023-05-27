@@ -1,18 +1,21 @@
-import Nav from './component/Nav';
-import './App.css';
-import Table3 from './component/Table3';
-import Blg from './component/Blg';
+import Navbar from './component/Navbar';
+import Tables from './component/Tables';
+import Blog from './component/Blog'; 
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App" >
-      <Nav/>
-      <br/><br/><br/><br/><br/>
+    <div className="App">
+      
+      <Navbar/>
+      <br/>
+      <br/>
       <Routes>
-        <Route path='/' element={<Table3/>}/>
-        <Route path='/Blg' element={<Blg/>}/>
+        <Route path='/' element={<Tables/>}/>
+        <Route path='/Blog' element={<Blog/>}/>
       </Routes>
+      
+      
     </div>
   );
 }
